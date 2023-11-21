@@ -1,0 +1,152 @@
+
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.title {
+    color: black;
+    font-size: 60px;
+}
+
+body {
+    overflow-y: auto; /* or overflow-y: scroll; */
+}
+.iphone-background {
+    background-image: url('https://img.freepik.com/free-photo/front-view-hand-holding-smartphone_23-2148775905.jpg?size=626&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    width: 70%; /* Adjust the width as needed */
+    height: 100% ; /* Make it 20% smaller in height */
+    position: fixed;
+    top: 10%; /* Adjust the top position as needed */
+    right: -10%; /* Adjust the right position for more movement to the right */
+    display: flex;
+    flex-direction: row; /* Set the flex direction to row */
+    align-items: center;
+    justify-content: space-around;
+}
+/* -------------------------------------------------------- */
+#weather-app {
+    background-image: url('/GitHub_Repositories/23.Final_Project/icons/weather.png');
+    background-size: 100%;
+    width: 10%; /* Adjust the width as needed */
+    height: 10%; /* Adjust the height using viewport width units */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 25%; /* Adjust the top position as needed */
+    right: 50%; /* Adjust the right position for more movement to the right */
+}
+#weather-info {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-align: center;
+    top: 20%;
+}
+#weather-text {
+    position: absolute;
+    top: 36%; /* Adjust the top position to place it below the weather app */
+    right: 56%; /* Align with the weather app */
+    transform: translateX(50%); /* Adjust the translation to center it */
+    font-weight: bold;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+/* -------------------------------------------------------- */
+
+
+
+#contacts-app {
+    background-image: url('/GitHub_Repositories/23.Final_Project/icons/contacts.png');
+    background-size: 100%;
+    background-position: center center;
+    width: 10%; /* Adjust the width as needed */
+    height: 10%; /* Adjust the height using viewport width units */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 40%; /* Adjust the top position as needed */
+    right: 35%; /* Adjust the right position for more movement to the right */
+}
+#contacts-text {
+    position: absolute;
+    top: 51%; /* Adjust the top position to place it below the weather app */
+    right: 41%; /* Align with the weather app */
+    transform: translateX(50%); /* Adjust the translation to center it */
+    font-weight: bold;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+/* -------------------------------------------------------- */
+
+
+#team4-movies-app {
+    background-image: url('/GitHub_Repositories/23.Final_Project/icons/4.png');
+    background-size: contain;
+    background-position: center center;
+    width: 10%; /* Adjust the width as needed */
+    height: 10%; /* Adjust the height using viewport width units */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 25%; /* Adjust the top position as needed */
+    right: 35%; /* Adjust the right position for more movement to the right */
+}
+#team4-movies-app-text {
+    position: absolute;
+    top: 36%; /* Adjust the top position to place it below the weather app */
+    right: 41%; /* Align with the weather app */
+    transform: translateX(50%); /* Adjust the translation to center it */
+    font-weight: bold;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+/* -------------------------------------------------------- */
+
+
+
+#weather-info {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+.app h2 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0; /* Move the text to the bottom */
+    left: 35%;
+    top: 20%;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    font-size: 60px;
+}
+
+
+/* -------------------------------------------------------- */
+#clock-container {
+    position: fixed;
+    top: 250px;
+    left: 1520px;
+    color: rgb(0, 0, 0);
+    font-size: 120px; /* Adjust the font size as needed */
+}
+
+
+
+

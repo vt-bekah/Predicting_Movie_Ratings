@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Team 4 Movie Recommendations</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Team 4 Movie Recommendations</h1>
+    </div>
+
+
+
+
+<!-- ----------------------------------------------------------------- -->
+    <div class="iphone-background">
+
+<!-- Clock -->
+        <div id="clock-container">
+        <div id="clock">...</div>
+        </div>
+
+        <div class="app" id="weather-app">
+            <h2></h2>
+            <div id="weather-info">Loading...</div>
+        </div>
+
+
+        <div id="weather-text">Weather</div>
+<!-- ----------------------------------------------------------------- -->
+        <div class="app" id="contacts-app">
+            <h2></h2>
+            <div id="Contacts"></div>
+        </div>
+        <div id="contacts-text">Contacts</div>
+
+<!-- ----------------------------------------------------------------- -->
+        <a href="http://127.0.0.1:5500/GitHub_Repositories/23.Final_Project/index2.html" class="app" id="team4-movies-app">
+            <h2></h2>
+            <!-- Placeholder for Team4 Movies content -->
+        </a>
+        <div id="team4-movies-app-text">Team4</div>
+    </div>
+
+
+
+
+<!-- ----------------------------------------------------------------- -->
+
+
+
+
+
+
+    <script src="/GitHub_Repositories/23.Final_Project/JS/logic.js"></script>
+    <script>
+// Function to update clock
+function updateClock() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  const formattedHours = hours % 12 || 12;
+  const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+  const timeString = `${formattedHours}:${formattedMinutes} ${ampm}`;
+  document.getElementById('clock').textContent = timeString;
+}
+
+// Call the function to update the clock every second
+setInterval(updateClock, 1000);
+
+
+
+
+        // Function to generate fake weather data
+        function generateFakeWeatherData() {
+            const temperatureCelsius = Math.floor(Math.random() * (30 - (-10) + 1)) + (-10); // Random temperature between -10°C and 30°C
+
+            // Convert Celsius to Fahrenheit
+            const temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+
+            const descriptions = ['Clear', 'Cloudy', 'Rainy', 'Snowy'];
+            const description = descriptions[Math.floor(Math.random() * descriptions.length)]; // Random weather description
+
+            return {
+                main: { temp: temperatureCelsius },
+                weather: [{ description }],
+                temperatureFahrenheit,
+            };
+        }
+
+        // Function to update weather information on the page
+        function updateWeatherInfo(data) {
+            const temperatureCelsius = data.main.temp;
+            const temperatureFahrenheit = data.temperatureFahrenheit;
+            const description = data.weather[0].description;
+            const weatherInfo = `${temperatureFahrenheit}°F
+            ${description}`;
+            document.getElementById('weather-info').textContent = weatherInfo;
+        }
+
+        // Call the function to generate fake weather data and update the page
+        const fakeWeatherData = generateFakeWeatherData();
+        updateWeatherInfo(fakeWeatherData);
+    </script>
+</body>
+</html>
