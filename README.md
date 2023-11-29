@@ -119,18 +119,22 @@ Significant patterns observed included:
 * Release month seems to have little impact on IMDB Rating but could be a useful factor in predicting Box Office.
 
 
-## Model Training:
+## Model Training and Configuration
+
+### Feature Engineering:
+Certain features required modification for model compatibility. For instance, encoding and dummy variables were applied to non-numeric values.
+
+### Training:
 The model is trained using the Random Forest Regressor. Example code snippet:
 ![image]([https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/3332fbb5-1c12-45a2-babb-4fc0f8cc28ed])
 
-## Current Model Configuration:
+### Configuration:
 The current machine learning model for adult movies utilizes the following features:
 + Features: ['ProductionBudget', 'OMDB_BoxOffice', 'OMDB_imdbVotes', 'DomesticGross', 'OMDB_Metascore', 'Director_Avg_Rating']
 + Target: 'OMDB_imdbRating'
 + Model: Random Forest Regressor with 100 estimators and a random state of 42.
 
-## Feature Engineering:
-Certain features required modification for model compatibility. For instance, encoding and dummy variables were applied to non-numeric values.
+
 
 ## Results and Insights:
 
