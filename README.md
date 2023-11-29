@@ -129,11 +129,17 @@ In this scenario, the focus is on predicting the IMDb rating for movies based on
 
 #### 6.1.1 The Movie Maker Scenario Random Forest Regression model:
 
-* Random Forest Regression Training and Evaluation: 
+* Random Forest Regression Training and Evaluation:
+
+  ![6 1 1 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/e2b4e4e7-0ff9-4e42-9ae5-6d79ade0fb16)
 
 * Plot the Random Forest Regression predictions and actuals together for Test Data:
+
+  ![6 1 1 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/83c6dfdf-0f6d-4aa6-aebc-1185a010a307)
   
 * Plot the Random Forest Regression predictions and actuals together for Training Data:
+
+  ![6 1 1 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/81813084-9237-49f8-8d55-d77c01ede5e3)
 
 #### 6.1.2 The Movie Maker Scenario Keras Tuner-optimized Deep Neural Network model:
 
