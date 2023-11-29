@@ -203,22 +203,22 @@ This scenario centers on predicting IMDb ratings (averageRating) for specific mo
 
 Our machine learning models helped determine what features were helpful and which were unhelpful in terms of predicting movie ratings for Movie Makers (like writers and directors) or Movie Viewers (general public). After an analysis was run, the mean squared error (MSE) of different features was determined which features would be best used for our Movie Viewer Model. The findings are below.
 
-    [(0.7446077994171829, 'Writer_Avg_Rating'),
-    (0.07237972195283289, 'Actor_Avg_Rating'),
-    (0.06643885261509044, 'Director_Avg_Rating'),
-    (0.05744663649815371, 'OMDB_Metascore'),
-    (0.023108750019075572, 'ProductionBudget'),
-    (0.01991983110341534, 'OMDB_Runtime'),
-    (0.011952615801406939, 'ReleaseMonth'),
-    (0.004145792592842266, 'OMDB_Rated')]
+    [(0.6519250358961095, 'Writer_Avg_Rating'),
+    (0.09965806242222075, 'OMDB_Metascore'),
+    (0.09880606578349418, 'Actor_Avg_Rating'),
+    (0.0559913409671581, 'Director_Avg_Rating'),
+    (0.04441745153470949, 'runtimeMinutes'),
+    (0.021500367037527585, 'ReleaseMonth'),
+    (0.014557240986055224, 'genres'),
+    (0.013144435372725163, 'OMDB_Rated')]
     
 For our Movie Maker model, the following features displayed a high relevance to our model and helped the model predictions strengthen. The findings are below
 
      [(0.7650085946133273, 'Writer_Avg_Rating'),
      (0.1506891806639987, 'Director_Avg_Rating'),
      (0.034104837973160156, 'ProductionBudget'),
-     (0.020016713908374107, 'OMDB_Runtime'),
-     (0.012083045522792539, 'ReleaseMonth'),]
+     (0.03110344823736731, 'OMDB_Runtime'),
+     (0.019093938512146535, 'ReleaseMonth'),]
 
 With Writer Average Rating being significant for both of our machine learning models, we did a deeper dive to find out more about all movie writers. One question that arose was "Is writer rating dependent on or correlate with experience?" For example, if an author writes more movies, will their rating improve over time? A Tableau journey was taken to find some of those answers. 
 
