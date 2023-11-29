@@ -126,17 +126,23 @@ In the pursuit of empowering diverse stakeholders within the film industry, our 
 ### The Movie Maker Scenario:
 the focus is on predicting the IMDb rating for movies based on the collaborative efforts of Writers and Directors, along with considerations for release month, budget, and runtime. Despite the minimal impact of demographic age groups, the model aims to assist writers and directors in gauging the anticipated popularity of a movie by emphasizing key contributors and relevant factors.
 
-#### The Movie Maker Scenario Random Forest Regression model
+#### The Movie Maker Scenario Random Forest Regression model:
+
+#### The Movie Maker Scenario Keras Tuner-optimized Deep Neural Network model:
 
 ### The General Movie Viewer Scenario: 
 focuses on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), considering additional features like release month and runtime, with an exploration of the impact of a critic's score (Metascore). While budget information is unavailable in the larger dataset, the model targets audience viewers who contribute IMDb ratings after the movie release, aiming to capture the nuanced relationships between various features and audience ratings.
 
 #### The General Movie Viewer Scenario Random Forest Regression model:
+
+#### The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
  
 ### The Specific Movie User Scenario:
 centers on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and audience preferences.
 
 The Specific Movie User Scenario Random Forest Regression model:
+
+The Specific Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
 
 ## Results and Insights:
 
