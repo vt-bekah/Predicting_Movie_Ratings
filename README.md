@@ -34,7 +34,20 @@ In addition to The Numbers data, IMDb ratings and details were incorporated into
 
 
 ## Exploratory Data Analysis (EDA):
-Highlight key findings from your EDA phase, such as distribution of ratings, budget trends, or any significant patterns observed.
+
+Significant patterns observed included: 
++ Release Month is relatively evenly distributed across months
++ Release Year indicates a tail of movies pre-1980 which have been truncated. We dropped movies with release year < 1980 because there was a relatively low quantity of data points and we didn’t want to complicate matters my introduction inflation
+![ReleaseYear](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ddd0c1fb-1b7a-4a4b-8cc3-92b15872c746)
+![DropReleaseYear](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/613d8476-81de-4ddf-b593-0a4e8410d9aa)
++ Budgets 
+have a tail above 100,000,000 with the biggest chunk at <= 20,000,000 (another potential break could be 50,000,000). All have been kept for the minor processing.
+  
++ Runtime has most movies between 80 and 150 minutes with tails on both ends. All have been kept for minor processing.
+  
++ OMDB_Production has very few values filled
++ OMDB_Genre, OMDB_Director, OMDB_Writer, OMDB_Actors, OMDB_Language, OMDB_Country all have lists within the list
+
 
 ## Data Preprocessing:
 
@@ -42,6 +55,7 @@ Preprocessing included:
 + Creating dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
 + Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
 + Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
++ OMDB_Rated had 20 categories with overlap which have been reduced to 4 categories: kids (G, PG), teens (PG13), adults(NC-17+, R), and unknown
 
 ## Visualizations:
 Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
