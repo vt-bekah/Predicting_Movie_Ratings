@@ -64,7 +64,7 @@ Significant patterns observed included:
 + OMDB_Genre, OMDB_Director, OMDB_Writer, OMDB_Actors, OMDB_Language, OMDB_Country all have lists within the list
 * OMDB_Metascore has a relatively normal distribution
 
-![Metascore](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/b440cad6-1dc6-4fed-99a5-849cdff29ea1)
+  ![Metascore](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/b440cad6-1dc6-4fed-99a5-849cdff29ea1)
  
 * OMDB_imbdRating has a relatively normal distribution with a tail on the lower end
 
@@ -72,8 +72,8 @@ Significant patterns observed included:
   
 * OMDB_BoxOffice has a long tail above 200,000,000; most fall under 100,000,000
 
-![boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/cc2cd162-bb4f-4073-83f9-76d77af09a1b)
-![boxoffice2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/5f2c2311-1116-4da3-a46e-e06a12757acd)
+  ![boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/cc2cd162-bb4f-4073-83f9-76d77af09a1b)
+  ![boxoffice2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/5f2c2311-1116-4da3-a46e-e06a12757acd)
 
 
 
