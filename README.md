@@ -86,26 +86,26 @@ Significant patterns observed included:
 #### Notes on Ouput Relationships
 * Metascore and imdbRating have a mediocre positive relationship
 
-     ![imdb v metascore](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/91e53e63-a6d2-4efb-a30b-c52a659ff60c)
+     ![imdb v metascore](images/meatscore_imdbrating_regression.png)
 
 * Box Office does **not** have a meaningful relationship with Metascore nor imdbRating
 
-     ![metascore v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/e53c6b81-2c39-4be1-9759-f56fa33a19fe)
-     ![imdb v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/c73f2639-cdee-4408-a900-ba76b922880b)
+     ![metascore v boxoffice](images/boxoffice_metascore_regression.png)
+     ![imdb v boxoffice](images/boxoffice_imdbRating_regression.png)
   
 #### Notes on Input to Output Relationships
 * Budget does **not** have a meaningful relationship to imdbRating nor Metascore
 
-     ![imdb v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3819b822-42f8-418c-9ffc-dfe2437e28df)
-     ![metascore v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3216d1ed-c6dc-4599-bbdb-dfe168424c28)
+     ![imdb v budget](images/budget_imdbRating_regression.png)
+     ![metascore v budget](images/budget_metascore_regression.png)
   
 * Budget does have a minor positve relationship with Box Office
 
-     ![boxoffice v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/779f9880-7ad2-49ec-9a7a-596b86e5e2c5)
+     ![boxoffice v budget](images/budget_boxoffice_regression.png)
  
 * Runtime does **not** have a meaningful relationship to imdbRating
 
-     ![imdb v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3289c775-5fbc-40e3-b0ab-3f0429c6b0ee)
+     ![imdb v budget](images/runtime_imdbRating_regression.png)
 
  
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
@@ -153,7 +153,7 @@ In this scenario, the focus is on predicting the IMDb rating for movies based on
 * Keras Tuner-optimized Hyperparameter Defintions: 
 
   ![6 1 2 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/1590f971-2db7-479e-a17d-72c0061bde3e)
-  ![6 1 2 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/d4edebde-def2-4ee1-abc7-93fa0be98167)
+  ![Movie Maker KT Model Performance](images/moviemaker_kerastuner.png)
 
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data:
 
@@ -185,7 +185,7 @@ This scenario focuses on predicting IMDb ratings (averageRating) for moviegoers 
 * Keras Tuner-optimized Hyperparameter Defintions: 
 
    ![6 2 2 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/0989ad28-5593-47e9-9507-de716b396711)
-   ![6 2 2 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/97d23a4b-ad95-4cf1-bd97-60dcb9b9188c)
+   ![General Viewer KT Model Performance](images/generalViewer_kerastuner.png)
  
 ### 6.3 The Specific Individual Movie User Scenario:
 This scenario centers on predicting IMDb ratings (averageRating) for specific moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to individual viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and individual audience preferences.
