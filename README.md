@@ -133,7 +133,6 @@ The current machine learning model for adult movies utilizes the following featu
 Certain features required modification for model compatibility. For instance, encoding and dummy variables were applied to non-numeric values.
 
 ## Results and Insights:
-The project is still in the configuration phase, but initial findings suggest that director ratings are highly influential in predicting the success of a movie.
 
 [Tableau Story](https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1)
 
