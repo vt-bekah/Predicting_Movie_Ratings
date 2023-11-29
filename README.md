@@ -25,8 +25,6 @@ The steps include:
 The data retrieval involves:
 + Utilizing the list of movie titles obtained from The Numbers scrape.
 + Querying the OMDb API for each movie to gather details like genre, director, writer, actors, ratings, and box office performance.
-+ Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
-+ Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
 + Exporting the final dataset to a CSV file for subsequent machine learning model training.
 
 Note: Both data retrieval processes involve substantial time investments, and running the notebooks may take an extended period due to the volume of API calls and web scraping operations.
@@ -39,11 +37,11 @@ In addition to The Numbers data, IMDb ratings and details were incorporated into
 Highlight key findings from your EDA phase, such as distribution of ratings, budget trends, or any significant patterns observed.
 
 ## Data Preprocessing:
-### Individual Ratings for Personnel
-To assess the impact of individual personnel (directors, writers, actors) on movie outcomes, Numbers_OMDB_people_ratings.ipynb and IMDB_OMDB_people_ratings.ipynb were used to create and export rating values.
 
-We created dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
-
+Preprocessing included:
++ Creating dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
++ Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
++ Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
 
 ## Visualizations:
 Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
