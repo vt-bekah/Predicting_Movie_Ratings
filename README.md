@@ -121,13 +121,14 @@ Our machine learning models helped determine what features were helpful and whic
     (0.004145792592842266, 'OMDB_Rated')]
     
 For our Movie Maker model, the following features displayed a high relevance to our model and helped the model predictions strengthen. The findings are below
+
      [(0.7762904808060668, 'Writer_Avg_Rating'),
-   + (0.08435962178529609, 'Actor_Avg_Rating'),
-   + (0.07790682815058736, 'Director_Avg_Rating'),
-   + (0.024725005792194197, 'ProductionBudget'),
-   + (0.020016713908374107, 'OMDB_Runtime'),
-   + (0.012083045522792539, 'ReleaseMonth'),
-   + (0.004618304034689036, 'OMDB_Rated')]
+     (0.08435962178529609, 'Actor_Avg_Rating'),
+     (0.07790682815058736, 'Director_Avg_Rating'),
+     (0.024725005792194197, 'ProductionBudget'),
+     (0.020016713908374107, 'OMDB_Runtime'),
+     (0.012083045522792539, 'ReleaseMonth'),
+     (0.004618304034689036, 'OMDB_Rated')]
 
 With Writer Average Rating being significant for both of our machine learning models, we did a deeper dive to find out more about all movie writers. One question that arose was "Is writer rating dependent on or correlate with experience?" For example, if an author writes more movies, will their rating improve over time? A Tableau journey was taken to find some of those answers. 
 
