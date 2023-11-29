@@ -145,9 +145,16 @@ In this scenario, the focus is on predicting the IMDb rating for movies based on
 
 * Keras Tuner-optimized Hyperparameter Defintions: 
 
+  ![6 1 2 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/1590f971-2db7-479e-a17d-72c0061bde3e)
+  ![6 1 2 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/d4edebde-def2-4ee1-abc7-93fa0be98167)
+
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data:
+
+  ![6 1 2 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/1cfd9cf2-3dc6-4c85-aed6-dc4fcd787920)
   
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data:
+
+  ![6 1 2 4](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/b3ab035f-40bf-4afb-bf8e-4edd0fe7c4d0)
   
 ### 6.2 The General Movie Viewer Scenario: 
 This scenario focuses on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), considering additional features like release month and runtime, with an exploration of the impact of a critic's score (Metascore). While budget information is unavailable in the larger dataset, the model targets audience viewers who contribute IMDb ratings after the movie release, aiming to capture the nuanced relationships between various features and audience ratings.
