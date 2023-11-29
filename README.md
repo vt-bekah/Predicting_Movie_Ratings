@@ -1,13 +1,20 @@
 # Movie Rating Prediction Model
 
 ## 1. Project Overview:
-The Movie Rating Prediction Model endeavors to create a robust machine learning model that forecasts viewer ratings for movies, specifically tailored to provide actionable insights for filmmakers. Leveraging data from [OMDb API](https://www.omdbapi.com/) for movie details and viewer ratings, and [The Numbers](https://www.the-numbers.com/) for comprehensive movie budget information, the project aims to enhance decision-making in the dynamic world of film production.
+The Movie Rating Prediction Model endeavors to create a robust machine learning model that forecasts viewer ratings for movies, specifically tailored to provide actionable insights for filmmakers. Leveraging data from [OMDb API](https://www.omdbapi.com/) for movie details and viewer ratings, [The Numbers](https://www.the-numbers.com/) for comprehensive movie budget information, and [IMDb TSV Files](https://developer.imdb.com/non-commercial-datasets/?ref_=pe_2610490_199225680) for larger movie ratings data set, the project aims to enhance decision-making in the dynamic world of film production.
 
 ## 2. Dependencies:
 To run the code, you will need the following dependencies:
 + pip install jupyter
 + pip install pandas
++ pip install numpy
++ pip install splinter
++ pip install bs4 (BeautifulSoup)
++ pip install scipy
++ pip install matplotlib
 + pip install scikit-learn
++ pip install keras_tuner
++ pip install tensorflow
 
 ## 3. Data Sources:
 Provide more details about the structure and nature of the data obtained from OMDb API and The Numbers. Include sample records if possible:
@@ -30,7 +37,7 @@ The data retrieval involves:
 
 Note: Both data retrieval processes involve substantial time investments, and running the notebooks may take an extended period due to the volume of API calls and web scraping operations.
 
-### 3.3 [IMDb TSV Files](https://www.tableau.com/community/movies/starter-kit?)
+### 3.3 [IMDb TSV Files](https://developer.imdb.com/non-commercial-datasets/?ref_=pe_2610490_199225680)
 In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
 
 ## 4. Data Preprocessing:
@@ -81,7 +88,7 @@ Significant patterns observed included:
 
      ![imdb v metascore](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/91e53e63-a6d2-4efb-a30b-c52a659ff60c)
 
-* Box Office does **not** have a meaningful relationship with Metascore nore imdbRating
+* Box Office does **not** have a meaningful relationship with Metascore nor imdbRating
 
      ![metascore v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/e53c6b81-2c39-4be1-9759-f56fa33a19fe)
      ![imdb v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/c73f2639-cdee-4408-a900-ba76b922880b)
@@ -247,7 +254,7 @@ While having the writer score and rating was valuable to our machine learning mo
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/342cc04d-1c50-4b79-a906-382b4ed75333)
 
 ## 8. Conclusion
-In the pursuit of creating a robust Movie Rating Prediction Model, our team has undertaken a comprehensive journey, combining data from [OMDb API](https://www.omdbapi.com/) and [The Numbers](https://www.the-numbers.com/) to build a machine learning model tailored for filmmakers. The goal is to provide valuable insights into predicting movie ratings for both general viewers and specific user scenarios.
+In the pursuit of creating a robust Movie Rating Prediction Model, our team has undertaken a comprehensive journey, combining data from [OMDb API](https://www.omdbapi.com/), [The Numbers](https://www.the-numbers.com/), and [IMDb TSV Files](https://developer.imdb.com/non-commercial-datasets/?ref_=pe_2610490_199225680) to build a machine learning model tailored for filmmakers. The goal is to provide valuable insights into predicting movie ratings for both general viewers and specific user scenarios.
 
 Our Movie Rating Prediction Model combines meticulous data collection, thorough exploratory analysis, and robust machine learning to provide actionable insights for both Movie Makers and Viewers. Both Writer and Director ratings emerged as key predictors, emphasizing the impact of artistic leadership on a film's success. The integration of Tableau analysis adds depth to our understanding, revealing interesting nuances in Writer Ratings. As the project evolves, we anticipate refining our models further, embracing new features, and staying attuned to industry dynamics. This journey into data-driven movie insights is a collaborative effort, and we look forward to advancing the intersection of technology and filmmaking.
 
