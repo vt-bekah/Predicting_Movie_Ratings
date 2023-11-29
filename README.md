@@ -92,9 +92,19 @@ Significant patterns observed included:
      ![metascore v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3216d1ed-c6dc-4599-bbdb-dfe168424c28)
   
 * Budget does have a minor positve relationship with Box Office
+
+ 
 * Runtime does **not** have a meaningful relationship to imdbRating
+
+
+ 
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
+
+
+ 
 * imdbRating box-and-whisker plots by month do not show much variation across months
+
+  
 
 #### Summary Findings to Kick-Off Machine Learning Experiments
 
