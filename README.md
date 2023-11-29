@@ -84,6 +84,27 @@ Certain features required modification for model compatibility. For instance, en
 ## Results and Insights:
 The project is still in the configuration phase, but initial findings suggest that director ratings are highly influential in predicting the success of a movie.
 
+Our machine learning models helped determine what features were helpful and which were unhelpful in terms of predicting movie ratings for Movie Makers (like writers and directors) or Movie Viewers (general public). After an analysis was run, the mean squared error (MSE) of different features was determined which features would be best used for our Movie Viewer Model. The findings are below.
+
+    [(0.7446077994171829, 'Writer_Avg_Rating'),
+    (0.07237972195283289, 'Actor_Avg_Rating'),
+    (0.06643885261509044, 'Director_Avg_Rating'),
+    (0.05744663649815371, 'OMDB_Metascore'),
+    (0.023108750019075572, 'ProductionBudget'),
+    (0.01991983110341534, 'OMDB_Runtime'),
+    (0.011952615801406939, 'ReleaseMonth'),
+    (0.004145792592842266, 'OMDB_Rated')]
+    
+For our Movie Maker model, the following features displayed a high relevance to our model and helped the model predictions strengthen. The findings are below
+     [(0.7762904808060668, 'Writer_Avg_Rating'),
+   + (0.08435962178529609, 'Actor_Avg_Rating'),
+   + (0.07790682815058736, 'Director_Avg_Rating'),
+   + (0.024725005792194197, 'ProductionBudget'),
+   + (0.020016713908374107, 'OMDB_Runtime'),
+   + (0.012083045522792539, 'ReleaseMonth'),
+   + (0.004618304034689036, 'OMDB_Rated')]
+
+
 ## Contributors
 + Rebekah Aldrich [GitHub](https://github.com/vt-bekah) | [LinkedIn](https://www.linkedin.com/in/rebekah-aldrich-13103219/)
 + Christopher Hornung [GitHub](https://github.com/cjhornung) | [LinkedIn](https://www.linkedin.com/in/christopherjhornung/)
