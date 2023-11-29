@@ -125,35 +125,61 @@ Significant patterns observed included:
 In the pursuit of empowering diverse stakeholders within the film industry, our machine learning models offer tailored insights for three distinct scenarios: "The General Movie Viewer," "The Specific Movie User," and "The Movie Maker." Each model is meticulously designed to cater to the unique objectives and perspectives of movie enthusiasts, individual users seeking personalized recommendations, and industry professionals involved in the creative and strategic aspects of movie production.
 
 ### 6.1 The Movie Maker Scenario:
-the focus is on predicting the IMDb rating for movies based on the collaborative efforts of Writers and Directors, along with considerations for release month, budget, and runtime. Despite the minimal impact of demographic age groups, the model aims to assist writers and directors in gauging the anticipated popularity of a movie by emphasizing key contributors and relevant factors.
+In this scenario, the focus is on predicting the IMDb rating for movies based on the collaborative efforts of Writers and Directors, along with considerations for release month, budget, and runtime. Despite the minimal impact of demographic age groups, the model aims to assist writers and directors in gauging the anticipated popularity of a movie by emphasizing key contributors and relevant factors.
 
 #### 6.1.1 The Movie Maker Scenario Random Forest Regression model:
 
-* Plot the Random Forest Regression predictions and actuals together for Test Data
-* 
-* Plot the Random Forest Regression predictions and actuals together for Training Data
+* Random Forest Regression Training and Evaluation: 
+
+* Plot the Random Forest Regression predictions and actuals together for Test Data:
+  
+* Plot the Random Forest Regression predictions and actuals together for Training Data:
 
 #### 6.1.2 The Movie Maker Scenario Keras Tuner-optimized Deep Neural Network model:
 
+* Keras Tuner-optimized Hyperparameter Defintions: 
+
+* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data:
+  
+* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data:
+  
 ### 6.2 The General Movie Viewer Scenario: 
-focuses on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), considering additional features like release month and runtime, with an exploration of the impact of a critic's score (Metascore). While budget information is unavailable in the larger dataset, the model targets audience viewers who contribute IMDb ratings after the movie release, aiming to capture the nuanced relationships between various features and audience ratings.
+This scenario focuses on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), considering additional features like release month and runtime, with an exploration of the impact of a critic's score (Metascore). While budget information is unavailable in the larger dataset, the model targets audience viewers who contribute IMDb ratings after the movie release, aiming to capture the nuanced relationships between various features and audience ratings.
 
 #### 6.2.1 The General Movie Viewer Scenario Random Forest Regression model:
 
+* Random Forest Regression Training and Evaluation 
+
 * Plot the Random Forest Regression predictions and actuals together for Test Data
+  
 * Plot the Random Forest Regression predictions and actuals together for Training Data
   
 #### 6.2.2 The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
 
+* Keras Tuner-optimized Hyperparameter Defintions: 
+
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data
+  
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data
  
 ### 6.3 The Specific Individual Movie User Scenario:
-centers on predicting IMDb ratings (averageRating) for specific moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to individual viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and individual audience preferences.
+This scenario centers on predicting IMDb ratings (averageRating) for specific moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to individual viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and individual audience preferences.
 
 #### 6.3.1 The Specific Individual Movie User Scenario Random Forest Regression model:
 
+* Random Forest Regression Training and Evaluation 
+
+* Plot the Random Forest Regression predictions and actuals together for Test Data
+  
+* Plot the Random Forest Regression predictions and actuals together for Training Data
+
 #### 6.3.1 The Specific Individual Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
+
+* Keras Tuner-optimized Hyperparameter Defintions: 
+
+* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data
+  
+* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data
 
 ## 7. Results and Insights:
 
