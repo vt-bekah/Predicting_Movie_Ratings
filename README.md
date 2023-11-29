@@ -39,13 +39,19 @@ Significant patterns observed included:
 + Release Month is relatively evenly distributed across months
 + Release Year indicates a tail of movies pre-1980 which have been truncated. We dropped movies with release year < 1980 because there was a relatively low quantity of data points and we didn’t want to complicate matters my introduction inflation
 
-![ReleaseYear](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ddd0c1fb-1b7a-4a4b-8cc3-92b15872c746)
-![DropReleaseYear](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/613d8476-81de-4ddf-b593-0a4e8410d9aa)
+  ![ReleaseYear](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ddd0c1fb-1b7a-4a4b-8cc3-92b15872c746)
+  ![DropReleaseYear](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/613d8476-81de-4ddf-b593-0a4e8410d9aa)
 
-+ Budgets 
-have a tail above 100,000,000 with the biggest chunk at <= 20,000,000 (another potential break could be 50,000,000). All have been kept for the minor processing.
++ Budgets have a tail above 100,000,000 with the biggest chunk at <= 20,000,000 (another potential break could be 50,000,000). All have been kept for the minor processing.
+
+  ![ProductionBudget1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3c2b2a48-f689-4199-bd33-2a9d024fb478)
+  ![ProductionBudget2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/0a3919a7-a902-4c9c-8221-c64d4983e5da)
+
   
 + Runtime has most movies between 80 and 150 minutes with tails on both ends. All have been kept for minor processing.
+
+  ![Runtime1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/1e88cf55-cd8d-4bfd-a70b-b504199d9530)
+  ![Runtime2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3a724cdc-92a1-4ad5-9802-e6f017411ba7)
   
 + OMDB_Production has very few values filled
 + OMDB_Genre, OMDB_Director, OMDB_Writer, OMDB_Actors, OMDB_Language, OMDB_Country all have lists within the list
