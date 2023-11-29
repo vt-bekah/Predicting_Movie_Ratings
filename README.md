@@ -60,13 +60,11 @@ Significant patterns observed included:
 + Budgets have a tail above 100,000,000 with the biggest chunk at <= 20,000,000 (another potential break could be 50,000,000). All have been kept for the minor processing.
 
      ![ProductionBudget1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3c2b2a48-f689-4199-bd33-2a9d024fb478)
-     ![ProductionBudget2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/0a3919a7-a902-4c9c-8221-c64d4983e5da)
 
   
 + Runtime has most movies between 80 and 150 minutes with tails on both ends. All have been kept for minor processing.
 
      ![Runtime1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/1e88cf55-cd8d-4bfd-a70b-b504199d9530)
-     ![Runtime2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3a724cdc-92a1-4ad5-9802-e6f017411ba7)
   
 + OMDB_Production has very few values filled
 + OMDB_Genre, OMDB_Director, OMDB_Writer, OMDB_Actors, OMDB_Language, OMDB_Country all have lists within the list
@@ -81,7 +79,6 @@ Significant patterns observed included:
 * OMDB_BoxOffice has a long tail above 200,000,000; most fall under 100,000,000
 
      ![boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/cc2cd162-bb4f-4073-83f9-76d77af09a1b)
-     ![boxoffice2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/5f2c2311-1116-4da3-a46e-e06a12757acd)
 
 #### Notes on Ouput Relationships
 * Metascore and imdbRating have a mediocre positive relationship
@@ -111,7 +108,6 @@ Significant patterns observed included:
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
 
      ![initial box plot for each month's BoxOffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/d6432dc7-bad5-406a-b0bb-de08ba209e7b)
-     ![box plot for each month's BoxOffice for movies with Box Office less than 20,0000,000](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ae66374d-8549-4657-9329-99f4699630ff)
 
  
 * imdbRating box-and-whisker plots by month do not show much variation across months
@@ -144,9 +140,6 @@ In this scenario, the focus is on predicting the IMDb rating for movies based on
 
   ![6 1 1 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/83c6dfdf-0f6d-4aa6-aebc-1185a010a307)
   
-* Plot the Random Forest Regression predictions and actuals together for Training Data:
-
-  ![6 1 1 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/81813084-9237-49f8-8d55-d77c01ede5e3)
 
 #### 6.1.2 The Movie Maker Scenario Keras Tuner-optimized Deep Neural Network model:
 
@@ -159,9 +152,6 @@ In this scenario, the focus is on predicting the IMDb rating for movies based on
 
   ![6 1 2 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/1cfd9cf2-3dc6-4c85-aed6-dc4fcd787920)
   
-* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data:
-
-  ![6 1 2 4](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/b3ab035f-40bf-4afb-bf8e-4edd0fe7c4d0)
   
 ### 6.2 The General Movie Viewer Scenario: 
 This scenario focuses on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), considering additional features like release month and runtime, with an exploration of the impact of a critic's score (Metascore). While budget information is unavailable in the larger dataset, the model targets audience viewers who contribute IMDb ratings after the movie release, aiming to capture the nuanced relationships between various features and audience ratings.
@@ -176,9 +166,6 @@ This scenario focuses on predicting IMDb ratings (averageRating) for moviegoers 
 
    ![6 2 1 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/9c32f36e-3089-4421-8501-18c108facde5)
 
-* Plot the Random Forest Regression predictions and actuals together for Training Data
-
-  ![6 2 1 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3f0da62d-7c9c-4fb6-97fc-a64fa95850ee)
 
 #### 6.2.2 The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
 
@@ -200,9 +187,6 @@ This scenario centers on predicting IMDb ratings (averageRating) for specific mo
 
   ![6 3 1 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ee078e55-e028-46fc-81dd-4ed6a90fe97a)
 
-* Plot the Random Forest Regression predictions and actuals together for Training Data
-
-  ![6 3 1 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/b4f61902-bfa8-4f28-b43d-77fe25aa77f6)
 
 #### 6.3.1 The Specific Individual Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
 
@@ -230,13 +214,11 @@ Our machine learning models helped determine what features were helpful and whic
     
 For our Movie Maker model, the following features displayed a high relevance to our model and helped the model predictions strengthen. The findings are below
 
-     [(0.7762904808060668, 'Writer_Avg_Rating'),
-     (0.08435962178529609, 'Actor_Avg_Rating'),
-     (0.07790682815058736, 'Director_Avg_Rating'),
-     (0.024725005792194197, 'ProductionBudget'),
+     [(0.7650085946133273, 'Writer_Avg_Rating'),
+     (0.1506891806639987, 'Director_Avg_Rating'),
+     (0.034104837973160156, 'ProductionBudget'),
      (0.020016713908374107, 'OMDB_Runtime'),
-     (0.012083045522792539, 'ReleaseMonth'),
-     (0.004618304034689036, 'OMDB_Rated')]
+     (0.012083045522792539, 'ReleaseMonth'),]
 
 With Writer Average Rating being significant for both of our machine learning models, we did a deeper dive to find out more about all movie writers. One question that arose was "Is writer rating dependent on or correlate with experience?" For example, if an author writes more movies, will their rating improve over time? A Tableau journey was taken to find some of those answers. 
 
