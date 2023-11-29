@@ -33,7 +33,7 @@ Note: Both data retrieval processes involve substantial time investments, and ru
 ### 3.3 [IMDb TSV Files](https://www.tableau.com/community/movies/starter-kit?)
 In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
 
-## Data Preprocessing:
+## 4. Data Preprocessing:
 
 Preprocessing included:
 + Creating dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
@@ -41,7 +41,7 @@ Preprocessing included:
 + Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
 + OMDB_Rated had 20 categories with overlap which have been reduced to 4 categories: kids (G, PG), teens (PG13), adults(NC-17+, R), and unknown
 
-## Exploratory Data Analysis (EDA) and Visualizations:
+## 5. Exploratory Data Analysis (EDA) and Visualizations:
 
 Significant patterns observed included: 
 + Release Month is relatively evenly distributed across months
@@ -112,7 +112,7 @@ Significant patterns observed included:
   ![box plot for each month's BoxOffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/f832eb59-698d-46e5-8e1a-be1260e785f1)
 
 
-#### Summary Findings to Kick-Off Machine Learning Experiments
+#### 5.1 Summary Findings to Kick-Off Machine Learning Experiments
 
 * Single numeric feature relationships to the IMDB Rating outcome are very weak indicating challenges to using numeric only features to predict viewer ratings.
 * Using a critic rating (e.g., Metascore) available to a release can help improve predicting viewer ratings (e.g., IMDB Rating).
@@ -120,42 +120,46 @@ Significant patterns observed included:
 * Release month seems to have little impact on IMDB Rating but could be a useful factor in predicting Box Office.
 
 
-## Model Training and Configuration
+## 6. Model Training and Configuration
 
 In the pursuit of empowering diverse stakeholders within the film industry, our machine learning models offer tailored insights for three distinct scenarios: "The General Movie Viewer," "The Specific Movie User," and "The Movie Maker." Each model is meticulously designed to cater to the unique objectives and perspectives of movie enthusiasts, individual users seeking personalized recommendations, and industry professionals involved in the creative and strategic aspects of movie production.
 
-### The Movie Maker Scenario:
+### 6.1 The Movie Maker Scenario:
 the focus is on predicting the IMDb rating for movies based on the collaborative efforts of Writers and Directors, along with considerations for release month, budget, and runtime. Despite the minimal impact of demographic age groups, the model aims to assist writers and directors in gauging the anticipated popularity of a movie by emphasizing key contributors and relevant factors.
 
-#### The Movie Maker Scenario Random Forest Regression model:
+#### 6.1.1 The Movie Maker Scenario Random Forest Regression model:
 
-#### The Movie Maker Scenario Keras Tuner-optimized Deep Neural Network model:
+* Plot the Random Forest Regression predictions and actuals together for Test Data
+* 
+* Plot the Random Forest Regression predictions and actuals together for Training Data
 
-### The General Movie Viewer Scenario: 
+#### 6.1.2 The Movie Maker Scenario Keras Tuner-optimized Deep Neural Network model:
+
+### 6.2 The General Movie Viewer Scenario: 
 focuses on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), considering additional features like release month and runtime, with an exploration of the impact of a critic's score (Metascore). While budget information is unavailable in the larger dataset, the model targets audience viewers who contribute IMDb ratings after the movie release, aiming to capture the nuanced relationships between various features and audience ratings.
 
-#### The General Movie Viewer Scenario Random Forest Regression model:
+#### 6.2.1 The General Movie Viewer Scenario Random Forest Regression model:
 
 * Plot the Random Forest Regression predictions and actuals together for Test Data
 * Plot the Random Forest Regression predictions and actuals together for Training Data
   
-#### The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
+#### 6.2.2 The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
 
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data
 * Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data
  
-### The Specific Individual Movie User Scenario:
+### 6.3 The Specific Individual Movie User Scenario:
 centers on predicting IMDb ratings (averageRating) for specific moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to individual viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and individual audience preferences.
 
-The Specific Individual Movie User Scenario Random Forest Regression model:
+#### 6.3.1 The Specific Individual Movie User Scenario Random Forest Regression model:
 
-The Specific Individual Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
+#### 6.3.1 The Specific Individual Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
 
-## Results and Insights:
+## 7. Results and Insights:
 
 [Tableau Story](https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1)
 
-### Writer Rating Feature 
+### 7.1 Writer Rating Feature 
 
 Our machine learning models helped determine what features were helpful and which were unhelpful in terms of predicting movie ratings for Movie Makers (like writers and directors) or Movie Viewers (general public). After an analysis was run, the mean squared error (MSE) of different features was determined which features would be best used for our Movie Viewer Model. The findings are below.
 
@@ -188,27 +192,27 @@ Based on our findings, writer experience does not correlate with writer rating. 
 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/6f7530a4-c57c-4f9a-8e9a-291496ddb394)
 
-### Release Month Feature
+### 7.2 Release Month Feature
 While having the writer score and rating was valuable to our machine learning models, one feature that deemed to have little importance for each movie was its relase month. After breaking down each movie into its own category of kids movies= ['PG', 'G', 'TV-PG', 'TV-G', 'GP', 'M/PG', 'M'], teens = ['PG-13', 'TV-14', '16+', '13+'], adults = ['R', 'TV-MA', 'NC-17', 'X', '18+'] and Unknown = ['Not Rated', 'Approved', 'Unrated', 'Passed'], there didn't seem to be correlation between IMDB votes and the Box Office in relation to release months. This proved our point that release month showed little importance to predicting the strength of a new movie. 
 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/342cc04d-1c50-4b79-a906-382b4ed75333)
 
-## Conclusion
+## 8. Conclusion
 In the pursuit of creating a robust Movie Rating Prediction Model, our team has undertaken a comprehensive journey, combining data from [OMDb API](https://www.omdbapi.com/) and [The Numbers](https://www.the-numbers.com/) to build a machine learning model tailored for filmmakers. The goal is to provide valuable insights into predicting movie ratings for both general viewers and specific user scenarios.
 
 Our Movie Rating Prediction Model combines meticulous data collection, thorough exploratory analysis, and robust machine learning to provide actionable insights for both Movie Makers and Viewers. Both Writer and Director ratings emerged as key predictors, emphasizing the impact of artistic leadership on a film's success. The integration of Tableau analysis adds depth to our understanding, revealing interesting nuances in Writer Ratings. As the project evolves, we anticipate refining our models further, embracing new features, and staying attuned to industry dynamics. This journey into data-driven movie insights is a collaborative effort, and we look forward to advancing the intersection of technology and filmmaking.
 
-## Future Directions
+## 9. Future Directions
 As the project evolves, we aim to fine-tune our models, explore additional features, and expand our analysis to cater to evolving trends in the dynamic realm of movie production. This journey into data-driven movie insights is a collaborative effort, and we look forward to advancing the intersection of technology and filmmaking.
 
-## Contributors
+## 10. Contributors
 + Rebekah Aldrich [GitHub](https://github.com/vt-bekah) | [LinkedIn](https://www.linkedin.com/in/rebekah-aldrich-13103219/)
 + Christopher Hornung [GitHub](https://github.com/cjhornung) | [LinkedIn](https://www.linkedin.com/in/christopherjhornung/)
 + Alejandro Davila [GitHub](https://github.com/alejandro-davila) | [LinkedIn](https://www.linkedin.com/in/alejandro-davila-61845b1b/)
 + Ashley Ley [GitHub](https://github.com/ashley-ley) | [LinkedIn](https://www.linkedin.com/in/ashley-ley1/)
 + Bryant Griessel [GitHub](https://github.com/demzilla) [LinkedIn](https://www.linkedin.com/in/bryant-griessel-6630a0185/)
 
-## File Structure
+## 11. File Structure
 + < html, css, JS files >
 + Python folder contains all the python used to clean and investigate data as well as create machine learning models
     + Movie Maker scenario files
