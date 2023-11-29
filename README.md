@@ -185,19 +185,24 @@ This scenario centers on predicting IMDb ratings (averageRating) for specific mo
 
 #### 6.3.1 The Specific Individual Movie User Scenario Random Forest Regression model:
 
-* Random Forest Regression Training and Evaluation 
+* Random Forest Regression Training and Evaluation
+
+  ![6 3 1 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/f8a8aa2d-7108-4f5b-9e5d-e30793e2218c)
 
 * Plot the Random Forest Regression predictions and actuals together for Test Data
-  
+
+  ![6 3 1 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ee078e55-e028-46fc-81dd-4ed6a90fe97a)
+
 * Plot the Random Forest Regression predictions and actuals together for Training Data
+
+  ![6 3 1 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/b4f61902-bfa8-4f28-b43d-77fe25aa77f6)
 
 #### 6.3.1 The Specific Individual Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
 
-* Keras Tuner-optimized Hyperparameter Defintions: 
-
-* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data
+* Keras Tuner-optimized Hyperparameter Defintions:
   
-* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data
+   ![6 3 2 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/63e9b18a-1f2d-400e-8173-0a2ac9bf9cdd)
+   ![6 3 2 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3edc5deb-d3fb-4c8c-a08a-bda63544155d)
 
 ## 7. Results and Insights:
 
