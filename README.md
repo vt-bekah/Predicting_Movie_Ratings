@@ -175,6 +175,13 @@ While having the writer score and rating was valuable to our machine learning mo
 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/342cc04d-1c50-4b79-a906-382b4ed75333)
 
+## Conclusion
+In the pursuit of creating a robust Movie Rating Prediction Model, our team has undertaken a comprehensive journey, combining data from [OMDb API](https://www.omdbapi.com/) and [The Numbers](https://www.the-numbers.com/) to build a machine learning model tailored for filmmakers. The goal is to provide valuable insights into predicting movie ratings for both general viewers and specific user scenarios.
+
+Our Movie Rating Prediction Model combines meticulous data collection, thorough exploratory analysis, and robust machine learning to provide actionable insights for both Movie Makers and Viewers. Both Writer and Director ratings emerged as key predictors, emphasizing the impact of artistic leadership on a film's success. The integration of Tableau analysis adds depth to our understanding, revealing interesting nuances in Writer Ratings. As the project evolves, we anticipate refining our models further, embracing new features, and staying attuned to industry dynamics. This journey into data-driven movie insights is a collaborative effort, and we look forward to advancing the intersection of technology and filmmaking.
+
+## Future Directions
+As the project evolves, we aim to fine-tune our models, explore additional features, and expand our analysis to cater to evolving trends in the dynamic realm of movie production. This journey into data-driven movie insights is a collaborative effort, and we look forward to advancing the intersection of technology and filmmaking.
 
 ## Contributors
 + Rebekah Aldrich [GitHub](https://github.com/vt-bekah) | [LinkedIn](https://www.linkedin.com/in/rebekah-aldrich-13103219/)
