@@ -9,6 +9,39 @@ To run the code, you will need the following dependencies:
 + pip install pandas
 + pip install scikit-learn
 
+## Data Sources:
+Provide more details about the structure and nature of the data obtained from OMDb API and The Numbers. Include sample records if possible:
+### [The Numbers](https://www.the-numbers.com/)
+The project leverages movie budget data obtained from The Numbers, a comprehensive movie industry data platform. The data retrieval process involves web scraping to collect information such as release dates, production budgets, and box office earnings for a diverse range of movies. The scraping script utilizes Python libraries, including Splinter for browser automation and BeautifulSoup for HTML parsing.
+
+The steps include:
++ Iteratively navigating through pages to cover a wide range of movies.
++ Scraping relevant details like release date, movie title, production budget, domestic gross, and worldwide gross.
++ Exporting the raw data to a CSV file for further processing and analysis.
+
+### [OMDb API](https://www.omdbapi.com/)
+ To enrich the dataset with additional details and viewer ratings, the project queries the OMDb API. This API provides comprehensive information about movies, including details such as title, director, cast, ratings, and more.
+
+The data retrieval involves:
++ Utilizing the list of movie titles obtained from The Numbers scrape.
++ Querying the OMDb API for each movie to gather details like genre, director, writer, actors, ratings, and box office performance.
++ Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
++ Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
++ Exporting the final dataset to a CSV file for subsequent machine learning model training.
+
+Note: Both data retrieval processes involve substantial time investments, and running the notebooks may take an extended period due to the volume of API calls and web scraping operations.
+
+The resulting dataset, named "Numbers_OMDB_processed.csv," serves as the foundation for training and testing the machine learning model to predict movie ratings.
+
+## Exploratory Data Analysis (EDA):
+Highlight key findings from your EDA phase, such as distribution of ratings, budget trends, or any significant patterns observed.
+
+## Data Preprocessing:
+Detail the steps taken to clean and preprocess the data, addressing any missing values, outliers, or inconsistencies.
+
+## Visualizations:
+Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
+
 ## Model Training:
 The model is trained using the Random Forest Regressor. Example code snippet:
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/3332fbb5-1c12-45a2-babb-4fc0f8cc28ed)
