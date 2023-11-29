@@ -40,20 +40,14 @@ Highlight key findings from your EDA phase, such as distribution of ratings, bud
 
 ## Data Preprocessing:
 ### Individual Ratings for Personnel
-To assess the impact of individual personnel (directors, writers, actors) on movie outcomes, the following code was used to create and export rating values:
+To assess the impact of individual personnel (directors, writers, actors) on movie outcomes, Numbers_OMDB_people_ratings.ipynb and IMDB_OMDB_people_ratings.ipynb were used to create and export rating values.
 
-#### Director Ratings:
+We created dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
 
-Created a dictionary (director_dict) storing instances, total/average values of box office, production budget, metascore, and IMDb rating for each director.
-Exported director ratings to Numbers_OMDB_director_data.csv.
+
 Writer Ratings:
 
-#### Created a dictionary (writer_dict) storing instances, total/average values of box office, production budget, metascore, and IMDb rating for each writer.
-Exported writer ratings to Numbers_OMDB_writer_data.csv.
-Actor Ratings:
 
-#### Created a dictionary (actor_dict) storing instances, total/average values of box office, production budget, metascore, and IMDb rating for each actor.
-Exported actor ratings to Numbers_OMDB_actor_data.csv.
 
 ## Visualizations:
 Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
