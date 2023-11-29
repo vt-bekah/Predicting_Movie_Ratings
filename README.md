@@ -75,17 +75,17 @@ Significant patterns observed included:
      ![boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/cc2cd162-bb4f-4073-83f9-76d77af09a1b)
      ![boxoffice2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/5f2c2311-1116-4da3-a46e-e06a12757acd)
 
-### Notes on Ouput Relationships
+#### Notes on Ouput Relationships
 * Metascore and imdbRating have a mediocre positive relationship
 * Box Office does **not** have a meaningful relationship with Metascore nore imdbRating
-## Notes on Input to Output Relationships
+#### Notes on Input to Output Relationships
 * Budget does **not** have a meaningful relationship to imdbRating nor Metascore
 * Budget does have a minor positve relationship with Box Office
 * Runtime does **not** have a meaningful relationship to imdbRating
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
 * imdbRating box-and-whisker plots by month do not show much variation across months
 
-### Summary Findings to Kick-Off Machine Learning Experiments
+#### Summary Findings to Kick-Off Machine Learning Experiments
 
 * Single numeric feature relationships to the IMDB Rating outcome are very weak indicating challenges to using numeric only features to predict viewer ratings.
 * Using a critic rating (e.g., Metascore) available to a release can help improve predicting viewer ratings (e.g., IMDB Rating).
