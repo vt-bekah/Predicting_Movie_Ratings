@@ -113,9 +113,15 @@ For our Movie Maker model, the following features displayed a high relevance to 
    + (0.012083045522792539, 'ReleaseMonth'),
    + (0.004618304034689036, 'OMDB_Rated')]
 
-With Writer Average Rating being significant for both of our machine learning models, we did a deeper dive to find out more about all movie writers. Based on data collected, there were a few writers who have written numerous movies, but are not among the highest rated movie writers! Quantity does not always equate quality in this case.
-![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/6f7530a4-c57c-4f9a-8e9a-291496ddb394)
+With Writer Average Rating being significant for both of our machine learning models, we did a deeper dive to find out more about all movie writers. One question that arose was "Is writer rating dependent on or correlate with experience?" For example, if an author writes more movies, will their rating improve over time? A Tableau journey was taken to find some of those answers. 
 
+### Continue your analysis here: [Tableau Story](https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1)
+
+Based on our findings, writer experience does not correlate with writer rating. Some of the most prolific writers (Stephen King and Luc Besson both with 25 movies written) are not among the highest rated movie writers! Quantity does not always equate quality in this case.
+
+![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/d6f4b78a-b0fd-4cfa-b6d5-2cd26c1e2031)
+
+![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/6f7530a4-c57c-4f9a-8e9a-291496ddb394)
 
 
 ## Contributors
