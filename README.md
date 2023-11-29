@@ -82,12 +82,15 @@ Significant patterns observed included:
 
 * Box Office does **not** have a meaningful relationship with Metascore nore imdbRating
 
-![metascore v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/e53c6b81-2c39-4be1-9759-f56fa33a19fe)
-![imdb v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/c73f2639-cdee-4408-a900-ba76b922880b)
-
+     ![metascore v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/e53c6b81-2c39-4be1-9759-f56fa33a19fe)
+     ![imdb v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/c73f2639-cdee-4408-a900-ba76b922880b)
   
 #### Notes on Input to Output Relationships
 * Budget does **not** have a meaningful relationship to imdbRating nor Metascore
+
+     ![imdb v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3819b822-42f8-418c-9ffc-dfe2437e28df)
+     ![metascore v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3216d1ed-c6dc-4599-bbdb-dfe168424c28)
+  
 * Budget does have a minor positve relationship with Box Office
 * Runtime does **not** have a meaningful relationship to imdbRating
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
