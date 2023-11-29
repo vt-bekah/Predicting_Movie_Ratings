@@ -1,7 +1,7 @@
 # Movie Rating Prediction Model
 
 ## Project Overview:
-The main goal of this project is to create a machine learning model that predicts viewer ratings for movies, with a focus on providing insights for movie makers. The dataset used for training and testing the model is sourced from [OMDb API](https://www.omdbapi.com/) for movie details and viewer ratings, as well as [The Numbers](https://www.the-numbers.com/) for movie budgets.
+The Movie Rating Prediction Model endeavors to create a robust machine learning model that forecasts viewer ratings for movies, specifically tailored to provide actionable insights for filmmakers. Leveraging data from [OMDb API](https://www.omdbapi.com/) for movie details and viewer ratings, and [The Numbers](https://www.the-numbers.com/) for comprehensive movie budget information, the project aims to enhance decision-making in the dynamic world of film production.
 
 ## Dependencies:
 To run the code, you will need the following dependencies:
