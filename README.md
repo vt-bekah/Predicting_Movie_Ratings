@@ -46,7 +46,7 @@ Embed visualizations or link to relevant notebooks showcasing visual exploration
 
 ## Model Training:
 The model is trained using the Random Forest Regressor. Example code snippet:
-![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/3332fbb5-1c12-45a2-babb-4fc0f8cc28ed)
+![image]([https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/3332fbb5-1c12-45a2-babb-4fc0f8cc28ed])
 
 ## Current Model Configuration:
 The current machine learning model for adult movies utilizes the following features:
