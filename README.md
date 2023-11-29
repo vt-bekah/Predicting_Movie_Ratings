@@ -184,7 +184,7 @@ For our Movie Maker model, the following features displayed a high relevance to 
 
 With Writer Average Rating being significant for both of our machine learning models, we did a deeper dive to find out more about all movie writers. One question that arose was "Is writer rating dependent on or correlate with experience?" For example, if an author writes more movies, will their rating improve over time? A Tableau journey was taken to find some of those answers. 
 
-### Continue your analysis here: [Tableau Story](https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1)
+### 7.2 Continue your analysis here: [Tableau Story](https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1)
 
 Based on our findings, writer experience does not correlate with writer rating. Some of the most prolific writers (Stephen King and Luc Besson both with 25 movies written) are not among the highest rated movie writers! Quantity does not always equate quality in this case.
 
@@ -192,7 +192,7 @@ Based on our findings, writer experience does not correlate with writer rating. 
 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/6f7530a4-c57c-4f9a-8e9a-291496ddb394)
 
-### 7.2 Release Month Feature
+### 7.3 Release Month Feature
 While having the writer score and rating was valuable to our machine learning models, one feature that deemed to have little importance for each movie was its relase month. After breaking down each movie into its own category of kids movies= ['PG', 'G', 'TV-PG', 'TV-G', 'GP', 'M/PG', 'M'], teens = ['PG-13', 'TV-14', '16+', '13+'], adults = ['R', 'TV-MA', 'NC-17', 'X', '18+'] and Unknown = ['Not Rated', 'Approved', 'Unrated', 'Passed'], there didn't seem to be correlation between IMDB votes and the Box Office in relation to release months. This proved our point that release month showed little importance to predicting the strength of a new movie. 
 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/342cc04d-1c50-4b79-a906-382b4ed75333)
