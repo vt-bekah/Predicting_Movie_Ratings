@@ -45,10 +45,6 @@ To assess the impact of individual personnel (directors, writers, actors) on mov
 We created dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
 
 
-Writer Ratings:
-
-
-
 ## Visualizations:
 Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
 
