@@ -120,6 +120,8 @@ Certain features required modification for model compatibility. For instance, en
 ## Results and Insights:
 The project is still in the configuration phase, but initial findings suggest that director ratings are highly influential in predicting the success of a movie.
 
+[Tableau Story](https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1)
+
 ### Writer Rating Feature 
 
 Our machine learning models helped determine what features were helpful and which were unhelpful in terms of predicting movie ratings for Movie Makers (like writers and directors) or Movie Viewers (general public). After an analysis was run, the mean squared error (MSE) of different features was determined which features would be best used for our Movie Viewer Model. The findings are below.
