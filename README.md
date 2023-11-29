@@ -32,6 +32,13 @@ Note: Both data retrieval processes involve substantial time investments, and ru
 ### [IMDb TSV Files](https://www.tableau.com/community/movies/starter-kit?)
 In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
 
+## Data Preprocessing:
+
+Preprocessing included:
++ Creating dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
++ Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
++ Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
++ OMDB_Rated had 20 categories with overlap which have been reduced to 4 categories: kids (G, PG), teens (PG13), adults(NC-17+, R), and unknown
 
 ## Exploratory Data Analysis (EDA) and Visualizations:
 
@@ -69,13 +76,6 @@ Significant patterns observed included:
 ![boxoffice2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/5f2c2311-1116-4da3-a46e-e06a12757acd)
 
 
-## Data Preprocessing:
-
-Preprocessing included:
-+ Creating dictionaries for director, writer, and actor ratings to store instances, total/average values of box office, production budget, metascore, and IMDb rating for each director, writer, and actor.
-+ Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
-+ Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
-+ OMDB_Rated had 20 categories with overlap which have been reduced to 4 categories: kids (G, PG), teens (PG13), adults(NC-17+, R), and unknown
 
 ## Model Training:
 The model is trained using the Random Forest Regressor. Example code snippet:
