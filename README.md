@@ -77,7 +77,15 @@ Significant patterns observed included:
 
 #### Notes on Ouput Relationships
 * Metascore and imdbRating have a mediocre positive relationship
+
+     ![imdb v metascore](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/91e53e63-a6d2-4efb-a30b-c52a659ff60c)
+
 * Box Office does **not** have a meaningful relationship with Metascore nore imdbRating
+
+![metascore v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/e53c6b81-2c39-4be1-9759-f56fa33a19fe)
+![imdb v boxoffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/c73f2639-cdee-4408-a900-ba76b922880b)
+
+  
 #### Notes on Input to Output Relationships
 * Budget does **not** have a meaningful relationship to imdbRating nor Metascore
 * Budget does have a minor positve relationship with Box Office
