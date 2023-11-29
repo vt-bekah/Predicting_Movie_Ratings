@@ -93,9 +93,11 @@ Significant patterns observed included:
   
 * Budget does have a minor positve relationship with Box Office
 
+![boxoffice v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/779f9880-7ad2-49ec-9a7a-596b86e5e2c5)
  
 * Runtime does **not** have a meaningful relationship to imdbRating
 
+![imdb v budget](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3289c775-5fbc-40e3-b0ab-3f0429c6b0ee)
 
  
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
