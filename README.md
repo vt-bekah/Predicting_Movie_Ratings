@@ -120,6 +120,8 @@ Certain features required modification for model compatibility. For instance, en
 ## Results and Insights:
 The project is still in the configuration phase, but initial findings suggest that director ratings are highly influential in predicting the success of a movie.
 
+### Writer Rating Feature 
+
 Our machine learning models helped determine what features were helpful and which were unhelpful in terms of predicting movie ratings for Movie Makers (like writers and directors) or Movie Viewers (general public). After an analysis was run, the mean squared error (MSE) of different features was determined which features would be best used for our Movie Viewer Model. The findings are below.
 
     [(0.7446077994171829, 'Writer_Avg_Rating'),
@@ -150,6 +152,11 @@ Based on our findings, writer experience does not correlate with writer rating. 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/d6f4b78a-b0fd-4cfa-b6d5-2cd26c1e2031)
 
 ![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/6f7530a4-c57c-4f9a-8e9a-291496ddb394)
+
+### Release Month Feature
+While having the writer score and rating was valuable to our machine learning models, one feature that deemed to have little importance for each movie was its relase month. After breaking down each movie into its own category of kids movies= ['PG', 'G', 'TV-PG', 'TV-G', 'GP', 'M/PG', 'M'], teens = ['PG-13', 'TV-14', '16+', '13+'], adults = ['R', 'TV-MA', 'NC-17', 'X', '18+'] and Unknown = ['Not Rated', 'Approved', 'Unrated', 'Passed'], there didn't seem to be correlation between IMDB votes and the Box Office in relation to release months. This proved our point that release month showed little importance to predicting the strength of a new movie. 
+
+![image](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/132225987/342cc04d-1c50-4b79-a906-382b4ed75333)
 
 
 ## Contributors
