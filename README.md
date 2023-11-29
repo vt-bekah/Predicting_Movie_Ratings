@@ -163,17 +163,22 @@ This scenario focuses on predicting IMDb ratings (averageRating) for moviegoers 
 
 * Random Forest Regression Training and Evaluation 
 
+  ![6 2 1 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/95ddb514-f8df-4f92-b43f-343b2f8eabf2)
+
 * Plot the Random Forest Regression predictions and actuals together for Test Data
-  
+
+   ![6 2 1 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/9c32f36e-3089-4421-8501-18c108facde5)
+
 * Plot the Random Forest Regression predictions and actuals together for Training Data
-  
+
+  ![6 2 1 3](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/3f0da62d-7c9c-4fb6-97fc-a64fa95850ee)
+
 #### 6.2.2 The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
 
 * Keras Tuner-optimized Hyperparameter Defintions: 
 
-* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data
-  
-* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data
+   ![6 2 2 1](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/0989ad28-5593-47e9-9507-de716b396711)
+   ![6 2 2 2](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/97d23a4b-ad95-4cf1-bd97-60dcb9b9188c)
  
 ### 6.3 The Specific Individual Movie User Scenario:
 This scenario centers on predicting IMDb ratings (averageRating) for specific moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to individual viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and individual audience preferences.
