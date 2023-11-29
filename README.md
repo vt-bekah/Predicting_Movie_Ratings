@@ -31,7 +31,9 @@ The data retrieval involves:
 
 Note: Both data retrieval processes involve substantial time investments, and running the notebooks may take an extended period due to the volume of API calls and web scraping operations.
 
-The resulting dataset, named "Numbers_OMDB_processed.csv," serves as the foundation for training and testing the machine learning model to predict movie ratings.
+### [IMDb TSV Files]([https://www.omdbapi.com/](https://www.tableau.com/community/movies/starter-kit?d=7013y000002Kd0gAAC&utm_campaign=amer_tabaw&utm_content=Tableau_Data+Plus+Movies&utm_medium=organic_social&utm_source=linkedin))
+In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
+
 
 ## Exploratory Data Analysis (EDA):
 Highlight key findings from your EDA phase, such as distribution of ratings, budget trends, or any significant patterns observed.
