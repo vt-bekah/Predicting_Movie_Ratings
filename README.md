@@ -121,6 +121,8 @@ Significant patterns observed included:
 
 ## Model Training and Configuration
 
+In the pursuit of empowering diverse stakeholders within the film industry, our machine learning models offer tailored insights for three distinct scenarios: "The General Movie Viewer," "The Specific Movie User," and "The Movie Maker." Each model is meticulously designed to cater to the unique objectives and perspectives of movie enthusiasts, individual users seeking personalized recommendations, and industry professionals involved in the creative and strategic aspects of movie production.
+
 ### The Movie Maker Scenario:
 the focus is on predicting the IMDb rating for movies based on the collaborative efforts of Writers and Directors, along with considerations for release month, budget, and runtime. Despite the minimal impact of demographic age groups, the model aims to assist writers and directors in gauging the anticipated popularity of a movie by emphasizing key contributors and relevant factors.
 
