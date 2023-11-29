@@ -102,11 +102,14 @@ Significant patterns observed included:
  
 * Box Office box-and-whisker plots by month show quite a few outliers with Box Office above 20,000,000. Removing all movies with Box Office greater than 20,000,000 does show June, July, and December with the best Box Office return
 
+![initial box plot for each month's BoxOffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/d6432dc7-bad5-406a-b0bb-de08ba209e7b)
+![box plot for each month's BoxOffice for movies with Box Office less than 20,0000,000](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/ae66374d-8549-4657-9329-99f4699630ff)
 
  
 * imdbRating box-and-whisker plots by month do not show much variation across months
 
-  
+  ![box plot for each month's BoxOffice](https://github.com/vt-bekah/Predicting_Movie_Ratings/assets/134234019/f832eb59-698d-46e5-8e1a-be1260e785f1)
+
 
 #### Summary Findings to Kick-Off Machine Learning Experiments
 
