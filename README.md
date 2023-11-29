@@ -1,17 +1,18 @@
 # Movie Rating Prediction Model
 
-## Project Overview:
+## 1. Project Overview:
 The Movie Rating Prediction Model endeavors to create a robust machine learning model that forecasts viewer ratings for movies, specifically tailored to provide actionable insights for filmmakers. Leveraging data from [OMDb API](https://www.omdbapi.com/) for movie details and viewer ratings, and [The Numbers](https://www.the-numbers.com/) for comprehensive movie budget information, the project aims to enhance decision-making in the dynamic world of film production.
 
-## Dependencies:
+## 2. Dependencies:
 To run the code, you will need the following dependencies:
 + pip install jupyter
 + pip install pandas
 + pip install scikit-learn
 
-## Data Sources:
+## 3. Data Sources:
 Provide more details about the structure and nature of the data obtained from OMDb API and The Numbers. Include sample records if possible:
-### [The Numbers](https://www.the-numbers.com/)
+
+### 3.1 [The Numbers](https://www.the-numbers.com/)
 The project leverages movie budget data obtained from The Numbers, a comprehensive movie industry data platform. The data retrieval process involves web scraping to collect information such as release dates, production budgets, and box office earnings for a diverse range of movies. The scraping script utilizes Python libraries, including Splinter for browser automation and BeautifulSoup for HTML parsing.
 
 The steps include:
@@ -19,7 +20,7 @@ The steps include:
 + Scraping relevant details like release date, movie title, production budget, domestic gross, and worldwide gross.
 + Exporting the raw data to a CSV file for further processing and analysis.
 
-### [OMDb API](https://www.omdbapi.com/)
+### 3.2 [OMDb API](https://www.omdbapi.com/)
  To enrich the dataset with additional details and viewer ratings, the project queries the OMDb API. This API provides comprehensive information about movies, including details such as title, director, cast, ratings, and more.
 
 The data retrieval involves:
@@ -29,7 +30,7 @@ The data retrieval involves:
 
 Note: Both data retrieval processes involve substantial time investments, and running the notebooks may take an extended period due to the volume of API calls and web scraping operations.
 
-### [IMDb TSV Files](https://www.tableau.com/community/movies/starter-kit?)
+### 3.3 [IMDb TSV Files](https://www.tableau.com/community/movies/starter-kit?)
 In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
 
 ## Data Preprocessing:
@@ -135,14 +136,20 @@ focuses on predicting IMDb ratings (averageRating) for moviegoers based on key c
 
 #### The General Movie Viewer Scenario Random Forest Regression model:
 
+* Plot the Random Forest Regression predictions and actuals together for Test Data
+* Plot the Random Forest Regression predictions and actuals together for Training Data
+  
 #### The General Movie Viewer Scenario Keras Tuner-optimized Deep Neural Network model:
+
+* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Test Data
+* Plot the Keras Tuner-optimized Deep Neural Network predictions and actuals together for Training Data
  
-### The Specific Movie User Scenario:
-centers on predicting IMDb ratings (averageRating) for moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and audience preferences.
+### The Specific Individual Movie User Scenario:
+centers on predicting IMDb ratings (averageRating) for specific moviegoers based on key contributors' ratings (Writers, Directors, and Actors), with additional considerations for release month and runtime. Despite the absence of budget information in the larger dataset and the limited impact of age groups, the model aims to cater to individual viewers who contribute IMDb ratings post-movie release, emphasizing the intricate interplay between various contributors and individual audience preferences.
 
-The Specific Movie User Scenario Random Forest Regression model:
+The Specific Individual Movie User Scenario Random Forest Regression model:
 
-The Specific Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
+The Specific Individual Movie User Scenario Keras Tuner-optimized Deep Neural Network model:
 
 ## Results and Insights:
 
