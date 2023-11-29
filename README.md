@@ -33,7 +33,7 @@ Note: Both data retrieval processes involve substantial time investments, and ru
 In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
 
 
-## Exploratory Data Analysis (EDA):
+## Exploratory Data Analysis (EDA) and Visualizations:
 
 Significant patterns observed included: 
 + Release Month is relatively evenly distributed across months
@@ -76,9 +76,6 @@ Preprocessing included:
 + Handling the challenge of potential non-movie matches due to shared titles with TV shows or different media types.
 + Cleaning and formatting the data, including consolidating rating categories and converting currency and runtime values.
 + OMDB_Rated had 20 categories with overlap which have been reduced to 4 categories: kids (G, PG), teens (PG13), adults(NC-17+, R), and unknown
-
-## Visualizations:
-Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
 
 ## Model Training:
 The model is trained using the Random Forest Regressor. Example code snippet:
