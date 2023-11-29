@@ -39,7 +39,21 @@ In addition to The Numbers data, IMDb ratings and details were incorporated into
 Highlight key findings from your EDA phase, such as distribution of ratings, budget trends, or any significant patterns observed.
 
 ## Data Preprocessing:
-Detail the steps taken to clean and preprocess the data, addressing any missing values, outliers, or inconsistencies.
+### Individual Ratings for Personnel
+To assess the impact of individual personnel (directors, writers, actors) on movie outcomes, the following code was used to create and export rating values:
+
+#### Director Ratings:
+
+Created a dictionary (director_dict) storing instances, total/average values of box office, production budget, metascore, and IMDb rating for each director.
+Exported director ratings to Numbers_OMDB_director_data.csv.
+Writer Ratings:
+
+#### Created a dictionary (writer_dict) storing instances, total/average values of box office, production budget, metascore, and IMDb rating for each writer.
+Exported writer ratings to Numbers_OMDB_writer_data.csv.
+Actor Ratings:
+
+#### Created a dictionary (actor_dict) storing instances, total/average values of box office, production budget, metascore, and IMDb rating for each actor.
+Exported actor ratings to Numbers_OMDB_actor_data.csv.
 
 ## Visualizations:
 Embed visualizations or link to relevant notebooks showcasing visual explorations of the data and model performance.
