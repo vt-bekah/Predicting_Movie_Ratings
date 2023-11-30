@@ -1,4 +1,5 @@
-var myAPI = 'ac6cb27f'; // global string to be consistent with future usages elsewhere
+
+var myAPI = 'ac6cb27f'; 
 
 $(function () {
   $('#movie_list').css('display', 'none');
@@ -6,7 +7,7 @@ $(function () {
     $('#movie_list').css('display', 'none');
   });
 
-  // Button will be disabled until we type something inside the input field
+ 
   const source = document.getElementById('autoComplete');
   const inputHandler = function (e) {
     $('#movie_list').css('display', 'block');
@@ -43,7 +44,7 @@ $(function () {
   });
 });
 
-// will be invoked when clicking on the recommended movie cards
+
 function recommendcard(id){
   $("#loader").fadeIn();
   var my_api_key = myAPI;
@@ -52,7 +53,7 @@ function recommendcard(id){
 }
 
 
-// get the details of the movie from the API (based on the name of the movie)
+
 function load_details(my_api_key, search, isQuerySearch) {
   var url = 'http://www.omdbapi.com/?apikey=' + my_api_key + '&t=' + encodeURIComponent(search) + '&plot=fullr';
 
@@ -111,7 +112,7 @@ function load_details(my_api_key, search, isQuerySearch) {
   });
 }
 
-// get all the details of the movie using the movie id.
+
 function get_movie_details(movie_title, my_api_key) {
   $.ajax({
     type: 'GET',
@@ -126,7 +127,7 @@ function get_movie_details(movie_title, my_api_key) {
   });
 }
 
-// passing all the details to python's flask for displaying and scraping the movie reviews using imdb id
+
 function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_org){
   var imdb_id = movie_details.imdb_id;
   var poster;
@@ -155,13 +156,13 @@ function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_
     runtime = Math.floor(runtime/60)+" hour(s) "+(runtime%60)+" min(s)"
   }
 
-  // calling `get_movie_cast` to get the top cast for the queried movie
+
   movie_cast = get_movie_cast(movie_id,my_api_key);
   
-  // calling `get_individual_cast` to get the individual cast details
+
   ind_cast = get_individual_cast(movie_cast,my_api_key);
 
-  // calling `get_recommendations` to get the recommended movies for the given movie id from the TMDB API
+
   recommendations = get_recommendations(movie_id, my_api_key);
   
   details = {
@@ -211,7 +212,7 @@ function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_
   });
 }
 
-// getting the details of individual cast
+
 function get_individual_cast(movie_cast,my_api_key) {
     cast_bdays = [];
     cast_bios = [];
@@ -241,7 +242,7 @@ function get_individual_cast(movie_cast,my_api_key) {
     return {cast_bdays:cast_bdays,cast_bios:cast_bios,cast_places:cast_places};
   }
 
-// getting the details of the cast for the requested movie
+
 function get_movie_cast(movie_id,my_api_key){
     cast_ids= [];
     cast_names = [];
@@ -282,7 +283,7 @@ function get_movie_cast(movie_id,my_api_key){
     return {cast_ids:cast_ids,cast_names:cast_names,cast_chars:cast_chars,cast_profiles:cast_profiles};
   }
 
-// getting recommendations using OMDB API
+
 function get_recommendations(movie_id, my_api_key) {
   rec_movies = [];
   rec_posters = [];
@@ -304,7 +305,7 @@ function get_recommendations(movie_id, my_api_key) {
     async: false,
     success: function (movie) {
       if (movie && movie.Response === 'True') {
-        // Assume that 'Recommendations' is a field in the OMDB response containing an array of recommended movies
+
         var recommendations = movie.Recommendations;
 
         for (var recs in recommendations) {

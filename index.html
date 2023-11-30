@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Team 4 Movie Recommendations</title>
+    <style>
+
+        .iphone-background {
+            margin-left: 20px; 
+        }
+    
+        .magnifying-box {
+            position: fixed;
+            border: 1px solid #ccc;
+            background-color: white;
+            width: 100px; /* Adjust the width of the magnifying box as needed */
+            height: 100px; /* Adjust the height of the magnifying box as needed */
+            pointer-events: none; /* Allow the cursor to interact with elements behind the box */
+            display: none;
+        }
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    <title>TEAM 4 is the BEST!</title>
+    <link rel="shortcut icon" href="icons/favicon2.ico">
 </head>
 <body>
+
+    
     <div class="header">
-        <h1 class="title">Team 4 Movie Recommendations</h1>
+        <h1 class="title">Movie Rating Predictions - THE SEQUEL</h1>
     </div>
 
-
-
-
-<!-- ----------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------- -->
     <div class="iphone-background">
-
-<!-- Clock -->
+        <!-- Clock -->
         <div id="clock-container">
-        <div id="clock">...</div>
+            <div id="clock">...</div>
         </div>
 
         <div class="app" id="weather-app">
@@ -27,63 +49,81 @@
             <div id="weather-info">Loading...</div>
         </div>
 
-
         <div id="weather-text">Weather</div>
-<!-- ----------------------------------------------------------------- -->
-        <div class="app" id="contacts-app">
+
+        <!-- ----------------------------------------------------------------- -->
+        <a href="http://127.0.0.1:5500/about-us.html" class="app" id="contacts-app">
             <h2></h2>
             <div id="Contacts"></div>
-        </div>
+        </a>
         <div id="contacts-text">Contacts</div>
 
-<!-- ----------------------------------------------------------------- -->
-        <a href="http://127.0.0.1:5500/GitHub_Repositories/23.Final_Project/index2.html" class="app" id="team4-movies-app">
+        <!-- ----------------------------------------------------------------- -->
+        <a href="https://public.tableau.com/app/profile/ashley.ley/viz/IMDBMovieAnalysis_17011356518300/Story1?publish=yes" class="app" id="contacts2-app" target="_blank">
             <h2></h2>
-            <!-- Placeholder for Team4 Movies content -->
+            <div id="Contacts2"></div>
+        </a>
+        <div id="contacts2-text">Tableau</div>     
+        
+        
+
+        <!-- ----------------------------------------------------------------- -->
+        <a href="http://127.0.0.1:5500/index2.html" class="app" id="team4-movies-app">
+            <h2></h2>
+
         </a>
         <div id="team4-movies-app-text">Team4</div>
-    </div>
 
 
+        <!-- ----------------------------------------------------------------- -->
+</div>
+<div class="slides-container">
 
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR7hOz8R-lFzItmUPp8hqUlNp_5Sq5BcaTWPg1Lw-tC6ebfE86K0bgxZbzxMzWB2CBuBgZaychaI1J0/embed?start=true&loop=false&delayms=999999999" frameborder="0" 
+    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+    <!-- ----------------------------------------------------------------- -->
 
-<!-- ----------------------------------------------------------------- -->
-
-
-
-
-
-
-    <script src="/GitHub_Repositories/23.Final_Project/JS/logic.js"></script>
+    <script src="/JS/logic.js"></script>
     <script>
-// Function to update clock
-function updateClock() {
-  const now = new Date();
-  const hours = now.getHours();
-  const minutes = now.getMinutes();
-  const ampm = hours >= 12 ? 'PM' : 'AM';
-  const formattedHours = hours % 12 || 12;
-  const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
-  const timeString = `${formattedHours}:${formattedMinutes} ${ampm}`;
-  document.getElementById('clock').textContent = timeString;
-}
-
-// Call the function to update the clock every second
-setInterval(updateClock, 1000);
 
 
 
 
-        // Function to generate fake weather data
+
+
+
+
+
+
+
+
+
+
+
+        
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            const formattedHours = hours % 12 || 12;
+            const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+            const timeString = `${formattedHours}:${formattedMinutes} ${ampm}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+
+        setInterval(updateClock, 1000);
+
+
         function generateFakeWeatherData() {
-            const temperatureCelsius = Math.floor(Math.random() * (30 - (-10) + 1)) + (-10); // Random temperature between -10°C and 30°C
+            const temperatureCelsius = Math.floor(Math.random() * (30 - (-10) + 1)) + (-10); 
 
-            // Convert Celsius to Fahrenheit
             const temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
 
             const descriptions = ['Clear', 'Cloudy', 'Rainy', 'Snowy'];
-            const description = descriptions[Math.floor(Math.random() * descriptions.length)]; // Random weather description
-
+            const description = descriptions[Math.floor(Math.random() * descriptions.length)]; 
             return {
                 main: { temp: temperatureCelsius },
                 weather: [{ description }],
@@ -91,19 +131,29 @@ setInterval(updateClock, 1000);
             };
         }
 
-        // Function to update weather information on the page
+
         function updateWeatherInfo(data) {
             const temperatureCelsius = data.main.temp;
             const temperatureFahrenheit = data.temperatureFahrenheit;
             const description = data.weather[0].description;
-            const weatherInfo = `${temperatureFahrenheit}°F
-            ${description}`;
+            const weatherInfo = `${temperatureFahrenheit}°F ${description}`;
             document.getElementById('weather-info').textContent = weatherInfo;
         }
 
-        // Call the function to generate fake weather data and update the page
+
         const fakeWeatherData = generateFakeWeatherData();
         updateWeatherInfo(fakeWeatherData);
+
+
+
+
+
+
+
+
     </script>
+    
 </body>
+
+
 </html>

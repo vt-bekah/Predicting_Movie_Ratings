@@ -5,6 +5,18 @@
     justify-content: center;
 }
 
+.slides-container {
+    width: 1300px; 
+    margin-right: 1000px;
+    height: 1000px; 
+}
+
+.slides-container iframe {
+    width: 100%; 
+    height: 100%;
+}
+
+
 .center {
     display: flex;
     justify-content: center;
@@ -18,107 +30,133 @@
 }
 
 body {
-    overflow-y: auto; /* or overflow-y: scroll; */
+    overflow-y: auto; 
 }
 .iphone-background {
     background-image: url('https://img.freepik.com/free-photo/front-view-hand-holding-smartphone_23-2148775905.jpg?size=626&ext=jpg');
     background-size: cover;
     background-position: center;
-    width: 70%; /* Adjust the width as needed */
-    height: 100% ; /* Make it 20% smaller in height */
+    width: 50%; 
+    height: 100% ; 
     position: fixed;
-    top: 10%; /* Adjust the top position as needed */
-    right: -10%; /* Adjust the right position for more movement to the right */
+    top: 10%; 
+    right: -10%; 
     display: flex;
-    flex-direction: row; /* Set the flex direction to row */
+    flex-direction: row; 
     align-items: center;
     justify-content: space-around;
 }
 /* -------------------------------------------------------- */
 #weather-app {
-    background-image: url('/GitHub_Repositories/23.Final_Project/icons/weather.png');
+    background-image: url('/icons/weather.png');
     background-size: 100%;
-    width: 10%; /* Adjust the width as needed */
-    height: 10%; /* Adjust the height using viewport width units */
+    width: 10%; 
+    height: 10%; 
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    top: 25%; /* Adjust the top position as needed */
-    right: 50%; /* Adjust the right position for more movement to the right */
+    top: 25%; 
+    right: 50%; 
 }
 #weather-info {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; 
     font-weight: bold;
     text-align: center;
     top: 20%;
 }
 #weather-text {
     position: absolute;
-    top: 36%; /* Adjust the top position to place it below the weather app */
-    right: 56%; /* Align with the weather app */
-    transform: translateX(50%); /* Adjust the translation to center it */
+    top: 36%; 
+    right: 56%; 
+    transform: translateX(50%); 
     font-weight: bold;
-    font-size: 25px; /* Adjust the font size as needed */
+    font-size: 25px; 
 }
 /* -------------------------------------------------------- */
 
 
 
 #contacts-app {
-    background-image: url('/GitHub_Repositories/23.Final_Project/icons/contacts.png');
-    background-size: 100%;
+    background-image: url('/icons/contacts.png');
+    background-size: contain;
     background-position: center center;
-    width: 10%; /* Adjust the width as needed */
-    height: 10%; /* Adjust the height using viewport width units */
+    width: 10%; 
+    height: 10%; 
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    top: 40%; /* Adjust the top position as needed */
-    right: 35%; /* Adjust the right position for more movement to the right */
+    top: 40%; 
+    right: 35%; 
 }
 #contacts-text {
     position: absolute;
-    top: 51%; /* Adjust the top position to place it below the weather app */
-    right: 41%; /* Align with the weather app */
-    transform: translateX(50%); /* Adjust the translation to center it */
+    top: 51%; 
+    right: 41%; 
+    transform: translateX(50%); 
     font-weight: bold;
-    font-size: 25px; /* Adjust the font size as needed */
+    font-size: 25px; 
+}
+/* -------------------------------------------------------- */
+
+
+
+#contacts2-app {
+    background-image: url('/icons/tableau1.png');
+    background-size: contain;
+    background-position: center center;
+    width: 10%; 
+    height: 10%; 
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 40%; 
+    right: 50%; 
+}
+#contacts2-text {
+    position: absolute;
+    top: 51%;
+    right: 56%; 
+    transform: translateX(50%); 
+    font-weight: bold;
+    font-size: 25px; 
 }
 /* -------------------------------------------------------- */
 
 
 #team4-movies-app {
-    background-image: url('/GitHub_Repositories/23.Final_Project/icons/4.png');
+    background-image: url('/icons/4.png');
     background-size: contain;
     background-position: center center;
-    width: 10%; /* Adjust the width as needed */
-    height: 10%; /* Adjust the height using viewport width units */
+    width: 10%; 
+    height: 10%;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    top: 25%; /* Adjust the top position as needed */
-    right: 35%; /* Adjust the right position for more movement to the right */
+    top: 25%; 
+    right: 35%; 
 }
 #team4-movies-app-text {
     position: absolute;
-    top: 36%; /* Adjust the top position to place it below the weather app */
-    right: 41%; /* Align with the weather app */
-    transform: translateX(50%); /* Adjust the translation to center it */
+    top: 36%; 
+    right: 41%; 
+    transform: translateX(50%);
     font-weight: bold;
-    font-size: 25px; /* Adjust the font size as needed */
+    font-size: 25px;
 }
 /* -------------------------------------------------------- */
 
 
 
 #weather-info {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; 
     font-weight: bold;
     text-align: center;
     margin-top: 35px;
@@ -128,7 +166,7 @@ body {
 .app h2 {
     color: rgb(0, 0, 0);
     position: absolute;
-    bottom: 0; /* Move the text to the bottom */
+    bottom: 0; 
     left: 35%;
     top: 20%;
     width: 100%;
@@ -140,12 +178,13 @@ body {
 
 /* -------------------------------------------------------- */
 #clock-container {
-    position: fixed;
+    position: absolute;
     top: 250px;
-    left: 1520px;
+    left: 450px;
     color: rgb(0, 0, 0);
-    font-size: 120px; /* Adjust the font size as needed */
+    font-size: 75px; 
 }
+
 
 
 

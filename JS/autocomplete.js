@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('main_data.csv')
         .then(response => response.text())
         .then(csvData => {
-            // Parse CSV data and log movies
+
             var films = parseCsvData(csvData);
             console.log('Parsed Movies:', films);
 
-            // Initialize autoComplete
+
             new autoComplete({
                 data: {
                     src: films,
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     position: "afterend",
                     element: "ul"
                 },
-                maxResults: 5,
+                maxResults: 15,
                 highlight: true,
                 resultItem: {
                     content: (data, source) => {
@@ -53,17 +53,16 @@ function parseCsvData(csvData) {
     const lines = csvData.split('\n');
     const movies = [];
 
-    // Assuming the first line is the header
+
     const headers = lines[0].split(',');
 
     for (let i = 1; i < lines.length; i++) {
         const columns = lines[i].split(',');
 
-        // Check if line is not empty
         if (columns.length > 1) {
             const movieTitleIndex = headers.indexOf('movie_title');
 
-            // Check if Movie column is present and not undefined
+
             if (columns.length > movieTitleIndex && columns[movieTitleIndex] !== undefined) {
                 movies.push(columns[movieTitleIndex].trim());
             }
