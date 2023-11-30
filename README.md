@@ -27,6 +27,9 @@ The steps include:
 + Scraping relevant details like release date, movie title, production budget, domestic gross, and worldwide gross.
 + Exporting the raw data to a CSV file for further processing and analysis.
 
+#### Credit:
++ https://www.the-numbers.com/movie/budgets/all 
+
 ### 3.2 [OMDb API](https://www.omdbapi.com/)
  To enrich the dataset with additional details and viewer ratings, the project queries the OMDb API. This API provides comprehensive information about movies, including details such as title, director, cast, ratings, and more.
 
@@ -37,8 +40,17 @@ The data retrieval involves:
 
 Note: Both data retrieval processes involve substantial time investments, and running the notebooks may take an extended period due to the volume of API calls and web scraping operations.
 
+#### Credit:
++ API by Brian Fritz.
++ All content licensed under CC BY-NC 4.0.
++ This site is not endorsed by or affiliated with IMDb.com.
+
 ### 3.3 [IMDb TSV Files](https://developer.imdb.com/non-commercial-datasets/?ref_=pe_2610490_199225680)
 In addition to The Numbers data, IMDb ratings and details were incorporated into the dataset to provide a more comprehensive understanding of movie outcomes. IMDb, in partnership with Tableau, provides TSV (Tab-Separated Values) files containing valuable information about movie titles, ratings, and more.
+
+#### Credit:
++ Data courtesy of IMDB
++ https://developer.imdb.com/non-commercial-datasets/
 
 ## 4. Data Preprocessing:
 
