@@ -1,5 +1,5 @@
 
-var myAPI = 'ac6cb27f'; 
+var myAPI = '----'; 
 
 $(function () {
   $('#movie_list').css('display', 'none');
